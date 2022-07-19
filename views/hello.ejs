@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1><%=title%></h1>
+  <!-- <p><%=content%></p>
+  <div>
+  <form method="post" action="/hello/post">
+    <label for ="msg">Message</label>
+    <input type="text" name="message" id="msg">
+    <input type="submit" value="送信">
+  </div>
+  </form> -->
+  <!-- <div>
+    <%if (content != null) { %>
+      <ol>
+     <% for(var i in content) { %>
+      <% var obj = content[i]; %>
+      <li>
+        <a href="<%=obj.link %>">
+          <%= obj.title %>
+        </a>
+      </li>
+    <%} %>
+  </ol>
+    <% }%>
+  </div> -->
+  <table>
+  <%- content%>
+  </table>
+</body>
+</html>
