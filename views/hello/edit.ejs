@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDIT</title>
+</head>
+<body>
+  <h1><%=title%></h1>
+  <p><%=content%></p>
+  <form method="post" action="/hello/edit">
+  <input type="text" name="id" value="<%=mydata.id%>">
+  <label>NAME</label>
+  <input type="text" name="name" id="name" value="<%=mydata.name%>">
+  <label>MAIL</label>
+  <input type="text" name="mail" id="mail" value="<%=mydata.mail%>">
+  <label>AGE</label>
+  <input type="number" name="age" id="age" value="<%=mydata.age%>">
+  <input type="submit" value="更新">
+  
+</form>
+</body>
+</html>

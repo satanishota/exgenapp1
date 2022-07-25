@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html">
+  
+  <title>find</title>
+</head>
+<body>
+  <h1><%=title%></h1>
+  <p><%=content%></p>
+  <form method="post" action="/hello/find">
+  <label>FIND</label>
+  <input type="text" name="find" id="find">
+  <input type="submit" value="更新">
+</form>
+  <table>
+    <tr>
+    <% for(var i in mydata) { %>
+      <% var obj =mydata[i] %>
+    <th><%= obj.id %></th>
+    <th><%= obj.nsme %></th>
+    <th><%= obj.mail %></th>
+    <th><%= obj.age %></th>
+  </tr>
+  <% } %>
+  </table>
+</body>
+</html>
