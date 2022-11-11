@@ -1,63 +1,301 @@
 
     <!DOCTYPE html>
-<html>
-  <h1>googlemap</h1>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d51814.56745196613!2d139.78260161332454!3d35.74071472596022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e2!4m5!1s0x60188e4fa5c463d1%3A0xac2e36291e3eb159!2z5p2x5Lqs6YO96Laz56uL5Yy66Laz56uL5Yy65Y2D5L2P77yV5LiB55uuIOiZueOBruW6g-WgtA!3m2!1d35.757171!2d139.80537379999998!4m5!1s0x60188f00a2f0ea6d%3A0xee1887ab3c561009!2z5p2x5Lqs6YO96Laz56uL5Yy65Y2D5L2P5puZ55S677yT77yUIOWggOWIh-mnhQ!3m2!1d35.7429583!2d139.81773099999998!4m5!1s0x60188f478cf255f1%3A0x8b7f02b175f2d5ef!2z5aKo55Sw5bCR5bm044Kw44Op44Km44Oz44OJ!3m2!1d35.7238956!2d139.8346633!5e0!3m2!1sja!2sjp!4v1664002436346!5m2!1sja!2sjp"
-   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <html lang="ja">
 <head>
-  <title><%= title %></title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-<h1>API</h1>
-<meta charset="utf-8">
-<style>
-/* マップを表示する div 要素の高さを必ず明示的に指定します。 */
-#map {
-  height: 400px;
-  width: 600px;
-}
-</style>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
 </head>
+
+    <style>
+        /* マップを表示する div 要素の高さを必ず明示的に指定します。 */
+        #map {
+          height: 400px;
+          width: 500px;
+        }
+        #map2 {
+          height: 400px;
+          width: 800px;
+          margin: 10px;
+        }
+
+        .header {
+          margin-top: 40px;
+          padding-top: 20px;
+          height: 80px;
+          background-color: orange;
+          text-align: center;
+          font-size: 40px;
+          color: white;
+        }
+        .content1a {
+      width: 1000px;
+      height: 500px;
+      background-color: azure;
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+        }
+
+        .box600 {
+          width: 600px; 
+          height: 400px; 
+          /* background-color: red;  */
+        }
+        .box400 {
+          width: 400px; 
+          height: 400px; 
+          /* background-color: red;  */
+        }
+        .box250 {
+          width: 250px; 
+          height: 300px; 
+          /* background-color: blue; */
+    
+        font-size: 20px;
+        margin: 30px;
+        line-height: 25px;
+        text-align: left;
+        }
+
+        .box100 {
+          width: 1000px; 
+          height: 100px; 
+          /* background-color: blue; */
+    
+        font-size: 20px;
+        
+        line-height: 25px;
+        text-align: center;
+        }
+      h1{
+        margin-left: 30px;
+      }
+
+      .content3a {
+        display: flex;
+      }
+      .f30 {
+        font-size: 30px;
+      }
+      .f30a {
+        font-size: 30px;
+        margin-left: 200px;
+      }
+      .time7a {
+        margin: 0 auto;
+        padding: 10px;
+        background-color: orange;
+       
+      }
+
+
+    .red {
+        font-size: 40px;
+        font-style: italic;
+        color: red;
+        text-align: center;
+      }
+
+        </style>
+
+        
+        <div class="header" >コース紹介</div>
+        <h1 class="name1">南方面</h1>
+    <div class="content1a">
+      
+      <div class="box600">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d51814.56745196613!2d139.78260161332454!3d35.74071472596022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e2!4m5!1s0x60188e4fa5c463d1%3A0xac2e36291e3eb159!2z5p2x5Lqs6YO96Laz56uL5Yy66Laz56uL5Yy65Y2D5L2P77yV5LiB55uuIOiZueOBruW6g-WgtA!3m2!1d35.757171!2d139.80537379999998!4m5!1s0x60188f00a2f0ea6d%3A0xee1887ab3c561009!2z5p2x5Lqs6YO96Laz56uL5Yy65Y2D5L2P5puZ55S677yT77yUIOWggOWIh-mnhQ!3m2!1d35.7429583!2d139.81773099999998!4m5!1s0x60188f478cf255f1%3A0x8b7f02b175f2d5ef!2z5aKo55Sw5bCR5bm044Kw44Op44Km44Oz44OJ!3m2!1d35.7238956!2d139.8346633!5e0!3m2!1sja!2sjp!4v1664002436346!5m2!1sja!2sjp"
+       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="box250">
+        <li>虹の広場から隅田少年グラウンドまで 5km</li>
+        <li>東武スカイツリーライン 堀切駅 2.5km</li>
+        <li>京成電鉄押上線　八広（やひろ）駅 4.5km</li>
+        
+       
+       </div>
+    </div>
+
+  <div class="content1a">
+    <div id="map"></div>
+    <div class="box400">
+      <img src="sample1.png" width="500px" height="400px">
+    </div>
+     
+  </div>
+    
+
+  <h1>北方面</h1>
   
-<body>
-<div id="map"></div><!-- 地図を表示する div 要素（id="map"）-->
-<script>
-  var map ;
-  function initMap() {
-	var latlng = new google.maps.LatLng(35.724233284078046, 139.8349283490421); //ゴールの経度
-	var center1 = new google.maps.LatLng(35.74359549970456, 139.8176766482384); //中心の緯度, 経度
+<div class="content1a">
+  <div class="box100">
+    <li>虹の広場から水辺広場公園まで 4.9km</li>
+    <li>日暮里舎人ライナー 足立小台(あだちおだい)駅 3.2km</li>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d25900.954866293792!2d139.76343727708726!3d35.76015945609524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x60188e37e8a9c3b7%3A0xf4d1011b7397cdda!2z6aeQ6LuK5aC0!3m2!1d35.7570214!2d139.8045556!4m5!1s0x60189389354c0d79%3A0x78e0849cfb258a29!2z5YWs6KGG44OI44Kk44OsKOi7iuakheWtkOWvvuW_nCk!3m2!1d35.764956999999995!2d139.7573382!5e0!3m2!1sja!2sjp!4v1668170471021!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <img src="sample2.png" width="400px" height="300px">
+</div>
+</div>
+<div class="content1a">
+    
+    <div id="map2"></div>
+</div>
 
-   map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 13,
-		center: center1
-	});
+<div class="content3a">
+  <div class="time7a">
+    <select class="time1a f30">      <!-- 1 -->
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+    </select>
+    時間 
 
-	var yoyogi = new google.maps.LatLng(35.75773594586802, 139.80540285979927);
-	var directionsService = new google.maps.DirectionsService();
-	var directionsRenderer = new google.maps.DirectionsRenderer();
+    <select class="time2a f30">
+      <option>00</option>
+      <option>15</option>
+      <option>30</option>
+      <option>45</option>
+    </select>
+    分
+ 
+    <button id="calc_time" class="f30">計算</button>
+  </div>
+</div>
+<div class="time3a f30a">10分→</div>
+<div class="time4a red">""</div>
+<div class="time3a f30a">1km→</div>
+<div class="time5a red">""</div>
+<div class="time3a f30a">10km→</div>
+<div class="time6a red">""</div>
 
-	var request = {
-		origin: yoyogi, //スタート地点
-		destination: latlng, //ゴール地点
-		waypoints: [ //経由地点
-			{location: new google.maps.LatLng(35.74359549970456, 139.8176766482384), stopover: false}
-		],
-		travelMode: google.maps.DirectionsTravelMode.WALKING, //移動手段
-	};
 
-	directionsService.route(request, function(result, status) {
-		if (status == google.maps.DirectionsStatus.OK) {
-			directionsRenderer.setOptions({
-				preserveViewport: true //ズーム率を変更してルート全体を表示しない
-			});
-			// ルート検索の結果を地図上に描画
-			directionsRenderer.setDirections(result);
-			directionsRenderer.setMap(map);
-		}
-	});
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDltvu2rAxtmbb4hSZjjnJJIsy1DRCzDtw&callback=initMap" async defer></script>
 
-</body>
-</html>
+    <script>
+      var map ;
+      function initMap() {
+        var latlng = new google.maps.LatLng(35.724233284078046, 139.8349283490421); //ゴールの経度
+        var center1 = new google.maps.LatLng(35.74359549970456, 139.8176766482384); //中心の緯度, 経度
+    
+       map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: center1
+        });
+    
+        var yoyogi = new google.maps.LatLng(35.75773594586802, 139.80540285979927);
+        var directionsService = new google.maps.DirectionsService();
+        var directionsRenderer = new google.maps.DirectionsRenderer();
+    
+        var request = {
+            origin: yoyogi, //スタート地点
+            destination: latlng, //ゴール地点
+            waypoints: [ //経由地点
+                {location: new google.maps.LatLng(35.74359549970456, 139.8176766482384), stopover: false}
+            ],
+            travelMode: google.maps.DirectionsTravelMode.WALKING, //移動手段
+        };
+    
+        directionsService.route(request, function(result, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+                directionsRenderer.setOptions({
+                    preserveViewport: true //ズーム率を変更してルート全体を表示しない
+                });
+                // ルート検索の結果を地図上に描画
+                directionsRenderer.setDirections(result);
+                directionsRenderer.setMap(map);
+            }
+        });
+
+      var map2;
+      var marker;
+      var startPoint = new google.maps.LatLng(35.756715, 139.80540285979927);
+      var goalPoint = new google.maps.LatLng(35.76503038806327, 139.75735939162263);
+
+       map2 = new google.maps.Map(document.getElementById('map2'), {
+        center: {lat: 35.75494211603151, lng: 139.77090385195444}, // 地図の中央位置を指定
+        zoom: 13, // 地図のズームを指定
+        mapTypeControl: false,
+       scaleControl: true,
+       streetViewControl: false,
+    });
+ 
+    marker = new google.maps.Marker({
+        position: {lat: 35.75494211603151, lng: 139.77090385195444}, // マーカーの位置を指定
+        map: map2 // マーカーを配置する地図を指定
+    });
+    marker2 = new google.maps.Marker({
+        position: startPoint, // マーカーの位置を指定
+        map: map2 // マーカーを配置する地図を指定
+    });
+
+    const detailwindow = new google.maps.InfoWindow({
+        content: `<h2>Ks電気</h2>`
+    });
+
+    marker.addListener('mouseover', () => {
+        detailwindow.open(map2,marker);
+    })
+
+    var request2 = {
+         origin: startPoint, //スタート地点
+    	 destination:  goalPoint, //ゴール地点
+    	//  waypoints: [{location: marker, stopover: false}], // 経由地点
+         travelMode: google.maps.TravelMode.WALKING,// 交通手段(歩行)
+    }
+
+    const detailwindow2 = new google.maps.InfoWindow({
+        content: `<h2>虹の広場</h2>`
+    });
+    
+
+    marker2.addListener('mouseover', () => {
+        detailwindow2.open(map2,marker2)
+    });
+    
+
+    var directionsService2 = new google.maps.DirectionsService();
+    var directionsRenderer2 = new google.maps.DirectionsRenderer();
+
+    directionsService2.route(request2, function (result, status) {
+         if (status == google.maps.DirectionsStatus.OK) {
+             directionsRenderer2.setDirections(result);
+             directionsRenderer2.setMap(map2);
+         }
+    });
+  }
+ 
+   let time4a = document.querySelector('.time4a') // ・・・2
+   let time5a = document.querySelector('.time5a') 
+   let time6a = document.querySelector('.time6a')
+   let calc = document.querySelector('#calc_time') //・・・3
+
+    calc.addEventListener("click",() => { //・・・4
+        time1a = document.querySelector('.time1a').value
+        time2a = document.querySelector('.time2a').value
+        
+        time1b = time1a * 3600 + time2a * 60 //１時間１分を3660秒にする計算
+        time1c = 42.195 / time1b * 600 // 42㎞の秒側に600秒（10分）をかけた値
+        time1d = time1b *  1 / 42.195 // 目標タイムの秒数÷42で　(秒/km) 
+
+        console.log(time1c)
+        console.log(time1d)
+
+        time4a.innerHTML = Math.floor(time1c * 10) / 10 + "km" //・・・5
+
+        time5a.innerHTML = Math.floor(time1d/60)  + "分" + Math.floor(time1d % 60 ) + "秒" //・・・6,7
+        time6a.innerHTML = Math.floor(time1d/6)  + "分" 
+
+        })
+
+    
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDltvu2rAxtmbb4hSZjjnJJIsy1DRCzDtw&callback=initMap" async defer></script>
+
+    </body>
+    </html>
 
