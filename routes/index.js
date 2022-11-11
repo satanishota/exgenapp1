@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 var data = {
           title:'ランニング',
-          content: /public/sample1.png
+          content: '/public/sample1.png'
         };
   res.render('index', data)
 });
