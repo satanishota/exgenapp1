@@ -3,8 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'ランニングコース' });
-  res.render('index', { sample1: '/public/sample1.png' })
+var data = {
+          title:'ランニング',
+          content: /public/sample1.png
+        };
+  res.render('index', data)
 });
 
 module.exports = router;
